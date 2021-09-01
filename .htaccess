@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /wipp/
+RewriteCond %{REQUEST_URI} !(.*)public
+RewriteCond %{REQUEST_URI} !-f
+
+RewriteRule ^(.*)$ public/$1 [L]
+

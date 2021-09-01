@@ -1,0 +1,2 @@
+<?php
+die('<link rel="stylesheet" type="text/css" href="'.SITE_URL.'font/lato.css"><body style="height: 100%;display: table;margin: 0;padding: 0;font-weight: 100;width: 100%;font-family: Lato Regular;"><div style="text-align: center;vertical-align: middle;display: table-cell;font-size: 35px">Oops... '.$error->message.'!<p>file location: '.$error->file.'</p><p> on line '.$error->line.'</p></div></div><br>');?>

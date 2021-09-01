@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 375px;
+    height:100%;
+    font-family: sans-serif;
+    background-color: #2a2f38;
+}
+
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    height:60px;
+    background-color:hsla(220, 15%, 19%,100%);
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top:0;
+}
+
+header a{
+    text-decoration: none;
+    color:rgb(211, 210, 210);
+    font-weight:300;
+    font-size:1.2rem;
+}
+
+footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2a2f39;
+    padding:1rem;
+}
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    color:#ccc;
+    font-weight: 300;
+    font-size: .95rem;
+}
+
+header span{
+    color:tomato;
+}
+
+main{
+    margin-top:70px;
+    padding:1rem;
+}
+
+.greetings{
+    width:100%;
+    padding:1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.greetings h3{
+    font-weight:300;
+    font-size:1.2rem;
+    font-family: 'Noto Sans', sans-serif;
+    color:#fff;
+}
+
+.greetings a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:100;
+    font-size:1rem;
+    background-color: tomato;
+    border:1px solid tomato;
+    padding:.8rem;
+    margin: .5rem 0 .2rem 0;
+    border-radius: .4rem;
+    transition:background-color .4s ease-in-out;
+}
+
+.greetings a:hover{
+    background-color:#fff;
+    color:tomato;
+    border:1px solid #fff;
+}
+
+.banner{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:1rem;
+    background-color: #fff;
+    border-radius: .4rem;
+}
+
+.banner .banner-box{
+    display: flex;
+    align-items: space-evenly;
+    width:100%;
+    justify-content: flex-start;
+    height:100%;
+    margin-bottom: 1.5rem;
+}
+
+.banner .banner-box img{
+    width:44px;
+    height:44px;
+    margin-right: 3rem;
+}
+
+.banner .banner-box h3{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color:#444;
+}
+
+.banner .banner-box p{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 100;
+}
+
+.graph{
+    width:100%;
+    margin:1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: flex-start;
+}
+
+.price-box .box{
+    margin:1rem 0;
+    background-color: #fff;
+    width:100%;
+    height:150px;
+    border-radius: .4rem;
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:100%;
+    height: 100%;
+}
+
+.text-container h3{
+    font-weight:300;
+    font-size: 1.2rem;
+    color:#222;
+}
+
+.text-container h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color:#111;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:#ddd;
+    text-align: center;
+}
+
+.cta button{
+    width:10rem;
+    height:2.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: tomato;
+    color:#fff;
+    border:1px solid tomato;
+    border-radius: .4rem;
+    transition: background-color .4s ease-in-out;
+}
+
+.cta button:hover{
+    background-color: #fff;
+    color:tomato;
+    border:1px solid #fff;
+}
+
+.cta .dollar{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #2a2f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:376px){
+    body{
+        max-width:100%;
+    }
+}
+
+@media screen and (min-width:600px){
+    .price-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:1rem;
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:800px){
+    .banner{
+        grid-template-columns: repeat(3,1fr);
+    }    
+}
+
+@media screen and (min-width:900px){
+    .greetings{
+        width:800px;
+        margin:1rem auto;
+    }
+
+    .banner{
+        width:800px;
+        margin:1rem auto;
+    }
+    .graph{
+        width:800px;
+        margin:1rem auto;
+    }
+}
+
+/*dashboard styles */
+.main{
+    padding:1rem;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.main .greetings{
+    margin:1.5rem 0 3rem 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main .deposit-box{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width:100%;
+    place-items: center;
+}
+
+.main .deposit-box .options{
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(3,1fr);
+    place-items: start;
+    gap:1rem;
+}
+
+.main .deposit-box .options li{
+    list-style: none;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size:1rem;
+    color:#ccc;
+}
+
+.main .greetings h3{
+    font-size: 2rem;
+    font-weight: 300;
+    color:#fff;
+}
+
+.main .info{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding:1rem;
+    background-color: #fff;
+    height:auto;
+}
+
+.main .info .info-box{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .5rem;
+}
+
+@media screen and (min-width:500px){
+    .main{
+        height:100vh;
+    }
+}
+
+@media screen and (min-width:600px){
+    .main .greetings{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .main .greetings a{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:600px){
+    .main .deposit-box .options{
+        grid-template-columns: repeat(4,1fr);
+    } 
+}
+
+@media screen and (min-width:800px){
+    .main .greetings{
+        width:700px;
+        margin:1.5rem auto 3rem auto;
+    }
+
+    .main .deposit-box .options{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .main .deposit-box{
+        width:700px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .main .deposit-box .options{
+        grid-template-columns: repeat(8,1fr);
+    }
+
+    .main .deposit-box{
+        width:100%;
+    }
+}

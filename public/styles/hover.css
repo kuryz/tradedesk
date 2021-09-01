@@ -1,0 +1,74 @@
+.hero button:hover{
+    background-color: #fff;
+    color:tomato;
+    border:1px solid #fff;
+}
+
+.trust .box:hover{
+    transform:scale(1.04);
+}
+
+.procedure .text-container button:hover{
+    background-color: #fff;
+    color:tomato;
+    border:2px solid tomato;
+}
+
+.steps .box-holder .box:hover{
+    transform:scale(1.04);
+} 
+
+.investment-box .box button:hover{
+    background-color: #fff;
+    border:2px solid tomato;
+    color:tomato;
+}
+
+.investment-box .box:hover{
+    transform:scale(1.04);
+}
+
+.buy button:hover{
+    background-color: #fff;
+    color:tomato;
+    border:2px solid tomato;
+}
+
+.newsbox button:hover{
+    background-color: #fff;
+    border:1px solid #fff;
+    color:tomato;
+}
+
+footer li a:hover{
+    color:hsla(9, 100%, 64%, .5)
+}
+
+footer li a:active{
+    color: tomato;
+}
+
+header .desktop-links .list .login:hover{
+    background-color: hsla(220, 15%, 19%,100%);
+}
+
+header .desktop-links .list .joinus:hover{
+    background-color: hsla(220, 15%, 19%,100%);
+}
+
+header .desktop-links .list li a:hover{
+    color:hsla(9, 100%, 64%, .5);
+}
+
+header .desktop-links .list li a:active{
+    color:tomato;
+}
+
+header .mobile-links .container .list li a:hover{
+    color:hsla(9, 100%, 64%, .5);
+}
+
+header .mobile-links .container .list li a:active{
+    color:tomato;
+}
+

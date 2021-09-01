@@ -1,0 +1,219 @@
+body{
+    max-width:375px;
+}
+
+main{
+    padding: 2rem 0;
+}
+
+main .form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+main .form{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1rem;
+    
+}
+
+main .form .img{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+main .form h3{
+    color:hsla(220, 15%, 19%,100%);
+    font-weight:300;
+    font-size:1.2rem;
+    text-align: center;
+}
+
+form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2rem 0;
+}
+
+form label{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+form label input{
+    width:100%;
+    border: none;
+    border-bottom: 2px solid hsl(220, 15%, 19%);
+    padding:.5rem 0;
+    outline: #fff;
+    transition: border-bottom .5s ease-in-out;
+}
+
+form label input::placeholder{
+    color:hsl(220, 15%, 19%);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+form label input:focus{
+    border-bottom: 2px solid tomato;
+}
+
+aside a{
+    text-decoration: none;
+    margin-top:1rem;
+    color:#333;
+    font-weight: 300;
+    font-size: .95rem;
+    transition:color .5s ease-in-out
+}
+
+body .logo{
+    font-size: 1.2rem;
+}
+
+form a:hover{
+    color:tomato;
+}
+
+h1{
+    align-self: center;
+    color:hsl(220, 15%, 19%);
+    margin:-1rem 0 0 0;
+}
+
+aside{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:.8rem 0;
+}
+
+aside button{
+    width:15rem;
+    height:3rem;
+    margin-bottom: .7rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 300;
+}
+
+aside .google{
+    background-color: tomato;
+    color:#fff;
+    border:1px solid tomato;
+    transition:background-color .5s ease-in-out;
+}
+
+aside .google:hover{
+    background-color: #fff;
+    color:tomato;
+    border:1px solid tomato;
+}
+
+aside .facebook{
+    background-color: hsl(220, 15%, 19%);
+    color:#fff;
+    border:1px solid hsl(220, 15%, 19%);
+    transition:background-color .5s ease-in-out;
+}
+
+aside .facebook:hover{
+    background-color: #fff;
+    color:hsl(220, 15%, 19%);
+    border:1px solid hsl(220, 15%, 19%);
+}
+
+.form-wrapper label ~ button{
+    width:12rem;
+    height:2.5rem;
+    background-color:tomato;
+    border: 1px solid tomato;
+    text-transform: uppercase;
+    color:#fff;
+    border-radius:.4rem;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.form-wrapper label ~ button:hover{
+    color:tomato;
+    background-color: #fff;
+    border: 1px solid tomato;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:376px){
+    body{
+        max-width:100%;
+    }
+
+    header{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:600px){
+    form{
+        width:60%;
+        margin: 2rem auto;
+    }
+
+    aside{
+        width:50%;
+        margin: 2rem auto;
+    }
+
+    .form img{
+        width:60%;
+        margin:2rem auto;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    main .form-wrapper{
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form{
+        width:40%;
+    }
+
+    aside{
+        width:30%;
+        margin: 2rem auto;
+    }
+
+    .form img{
+        width:40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .form img{
+        width:30%;
+    }
+}
