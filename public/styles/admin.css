@@ -29,7 +29,7 @@ span{
 }
 
 .dash-holder{
-    width:200px;
+    width: 238px; /*200px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;

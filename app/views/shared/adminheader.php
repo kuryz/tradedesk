@@ -16,7 +16,7 @@
         <div class="dash-holder">
             <a href="<?=SITE_URL?>admin-dashboard" style="color: tomato;">Dashboard</a>
              <a href="<?=SITE_URL?>logout" style="color: #bebaba;">Logout</a>
-            <a href="settings.html"><img src="icons/wrench.svg" alt="settings" width="22px" height="22px"></a> 
+            <a href="<?=SITE_URL?>settings"><img src="icons/wrench.svg" alt="settings" width="22px" height="22px"></a> 
             <a href="users.html"><img src="icons/user-circle - deactive.svg" alt="user" width="32px" height="32px"></a> 
         </div>
     </header>

@@ -30,6 +30,8 @@ $route->go('/manage-deposits', 'adminController@mdeposits');
 $route->go('/manage-withdrawals', 'adminController@mwithdraws');
 $route->go('/investments', 'adminController@minvestment');
 $route->go('/post-invest', 'adminController@postinvestment');
+$route->go('/settings', 'adminController@setting');
+$route->go('/post-settings', 'adminController@postsetting');
 
 $route->submit();
 ?>

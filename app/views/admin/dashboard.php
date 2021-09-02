@@ -12,7 +12,7 @@
                 <img src="icons/depo.png" alt="total Deposit" width="64px" height="64px">
                 <div class="text">
                     <h3>Total Deposit</h3>
-                    <p>$0</p>
+                    <p>$<?=$data->total_deposit->total_amt?></p>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@
                 <img src="icons/pend.png" alt="Pending Deposit" width="64px" height="64px">
                 <div class="text">
                     <h3>Pending Deposit</h3>
-                    <p>$0</p>
+                    <p>$<?=$data->pending_deposit->pending_amt?></p>
                 </div>
             </div>
 
